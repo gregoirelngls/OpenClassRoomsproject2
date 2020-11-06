@@ -1,42 +1,49 @@
 #container{
-    min-width: 20000px;
+    width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    background-color: blue;
+    background-color: white;
     font-family:Raleway; sans-serif; verdana;
 }
 
 #header{
     width: 100%;
-    height: 120px;
-    background-color: white;
+}
+
+#menu{
+    text-align: right;
 }
 
 #block-hebergement{
-    min-width: 940px;
     background-color: #F2F2F2;
+    width: 50%;
 }
 #block-populaire{
-    min-width: 940px;
     background-color: #F2F2F2;
-    
+    width: 30%;
 }
 #block-activite{
-    min-width: 940px;
     background-color: white;
+    width: 100%;
 }
 
 #block-footer{
-    min-width: 940px;
-    background-color:f2f8f2 ;
+     background-color:#F2F2F2 ;
+     width: 100%;
 }
 
-.box{
-    width: 200px;
-    height:200px;
-    border: 2px solid black;
+.box {
+    width: 15%;
+    border-radius: 7%;
 }
+
+.box img {
+    width: 90%;
+    padding: 10px;
+    border-radius: 7%;
+}
+
 
 
 
