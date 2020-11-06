@@ -1,0 +1,45 @@
+#container{
+    min-width: 20000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blue;
+    font-family:Raleway; sans-serif; verdana;
+}
+
+#header{
+    width: 100%;
+    height: 120px;
+    background-color: white;
+}
+
+#block-hebergement{
+    min-width: 940px;
+    background-color: #F2F2F2;
+}
+#block-populaire{
+    min-width: 940px;
+    background-color: #F2F2F2;
+    
+}
+#block-activite{
+    min-width: 940px;
+    background-color: white;
+}
+
+#block-footer{
+    min-width: 940px;
+    background-color:f2f8f2 ;
+}
+
+.box{
+    width: 200px;
+    height:200px;
+    border: 2px solid black;
+}
+
+
+
+
+
+
