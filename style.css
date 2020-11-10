@@ -1,3 +1,4 @@
+/*#region global */
 #container{
     width: 100%;
     height: auto;
@@ -7,42 +8,149 @@
     font-family:Raleway; sans-serif; verdana;
 }
 
+#bigblock{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box {
+    border-radius: 15px;  
+}
+
+.box1 img{
+    /* Simple test sur toute les images*/
+     width: 98%;
+     height: auto;
+     border-width: 2px;
+     border-style: solid;
+     border-color: white;
+     border-radius: 15px;
+ }
+ 
+ .box2 img{
+     width: 45%;
+     height: auto;
+     border-width: 2px;
+     border-style: solid;
+     border-color: white;
+     border-radius: 15px;
+ }
+
+ .box3 img{
+     width: 21%;
+ }
+
+ .box4 img{
+     width: 15%;
+ }
+
+.box.box1{
+    width: 26%;
+}
+
+.box.box2{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+}
+.box img {
+    width: 90%;
+    padding: 10px;
+}
+/*#endregion*/
+
+/*#region header*/
+
 #header{
     width: 100%;
 }
 
 #menu{
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
+#menu a{
+    display:flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    justify-content: right;
+}
+#menu a:hover{
+    text-decoration: overline;
+    color: rgb(45, 12, 192);
+}
+/*#endregion*/
+
+/*#region-hébergement*/
 #block-hebergement{
     background-color: #F2F2F2;
-    width: 50%;
+    width: 65%;
+    border-radius: 15px;
 }
+
+#block-hebergement .disposition1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+figure {
+    float: right;
+    width: 30%;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    border: thin silver solid;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  .box .box1{
+   width: 27%; 
+  }
+/*#endregion*/
+
+/*#region-populaire*/
 #block-populaire{
     background-color: #F2F2F2;
     width: 30%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
 }
+/*#endregion*/
+
+/*#region activite*/
 #block-activite{
     background-color: white;
     width: 100%;
 }
+/*#endregion*/   
 
-#block-footer{
+/*#region-footer*/
+#block_footer{
      background-color:#F2F2F2 ;
-     width: 100%;
+     width: 100%;   
+     display: flex;
+     flex-direction: row;
 }
 
-.box {
-    width: 15%;
-    border-radius: 7%;
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type:none;  
 }
 
-.box img {
-    width: 90%;
-    padding: 10px;
-    border-radius: 7%;
+.titre{
+font-weight: bold;
 }
+/*#endregion*/
 
 
 
