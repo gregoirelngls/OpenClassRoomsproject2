@@ -8,55 +8,23 @@
     font-family:Raleway; sans-serif; verdana;
 }
 
+h1{
+    font-size: 1.4em;
+}
+
+#logo img{
+width: 111px;
+margin: 0px;
+margin-top: 20px;
+}
+
 #bigblock{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-
-.box {
-    border-radius: 15px;  
-}
-
-.box1 img{
-    /* Simple test sur toute les images*/
-     width: 98%;
-     height: auto;
-     border-width: 2px;
-     border-style: solid;
-     border-color: white;
-     border-radius: 15px;
- }
  
- .box2 img{
-     width: 45%;
-     height: auto;
-     border-width: 2px;
-     border-style: solid;
-     border-color: white;
-     border-radius: 15px;
- }
 
- .box3 img{
-     width: 21%;
- }
-
- .box4 img{
-     width: 15%;
- }
-
-.box.box1{
-    width: 26%;
-}
-
-.box.box2{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-}
 .box img {
     width: 90%;
     padding: 10px;
@@ -69,21 +37,66 @@
     width: 100%;
 }
 
-#menu{
+#logomenu{
+    margin-top: 5px;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-#menu a{
-    display:flex;
-    justify-content: flex-end;
+li a{
     text-decoration: none;
-    justify-content: right;
+    margin-left:30px;
+    margin-right:30px;
+    color: grey;
 }
-#menu a:hover{
-    text-decoration: overline;
-    color: rgb(45, 12, 192);
+
+li a:hover{
+    color:#0065FC;
+    border-top: solid ;
 }
+
+nav ul{
+    padding: 15px;
+    margin: 6px;
+    list-style-type: none;
+    display: flex;
+}
+
+#ville{
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-radius:18px;
+    align-items: center;
+    width:24%;
+}
+
+#ville i {
+    margin-right: 15px;
+    margin-left:15px;
+    background-color: grey;
+}
+
+#Filtres{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+#disponible{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+
+
+
 /*#endregion*/
 
 /*#region-hébergement*/
@@ -93,12 +106,18 @@
     border-radius: 15px;
 }
 
-#block-hebergement .disposition1{
+#block-hebergement h2{
+    margin-left:20px;
+}
+
+#block-hebergement .disposition_hebergement{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    height:80%;
 }
+
 
 figure {
     float: right;
@@ -111,8 +130,20 @@ figure {
     margin: 0.5em;
     padding: 0.5em;
   }
-  .box .box1{
-   width: 27%; 
+
+  .box.box1{
+    width: 28%;
+    height: 33%;
+    background-color: white;
+    border-radius:7%;
+    box-shadow: 0px 2px 2px rgb(71, 70, 70); 
+}
+
+  .box1 img{
+    width: 92%;
+    height: 50%;
+    border-width: 2px;
+    border-radius: 22px 22px 0px 0px;
   }
 /*#endregion*/
 
@@ -121,8 +152,36 @@ figure {
     background-color: #F2F2F2;
     width: 30%;
     border-radius: 15px;
+}
+
+#disposition_populaire .box2{
+    width:80%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box2 img{
+    width: 45%;
+    height: auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.box.box2{
+    width: 75%;
     display: flex;
-    flex-direction: column;
+    background-color: white;
+    border-radius: 15%;
+    justify-content: space-around;
+}
+
+#alignementlogo{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: center;
 }
 /*#endregion*/
 
@@ -131,6 +190,42 @@ figure {
     background-color: white;
     width: 100%;
 }
+
+#disposition_activite{
+    flex-direction:row;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box3{
+    width:27%;
+}
+
+.box4{
+    width:27%;
+}
+
+.box4 img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap:wrap;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.box3 img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap:wrap;
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+
+
 /*#endregion*/   
 
 /*#region-footer*/
@@ -141,7 +236,7 @@ figure {
      flex-direction: row;
 }
 
-ul{
+#block_footer ul{
     display: flex;
     flex-direction: column;
     list-style-type:none;  
