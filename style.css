@@ -24,8 +24,9 @@ margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top:2%;
 }
- 
+
 /*#endregion*/
 
 /*#region header*/
@@ -33,6 +34,7 @@ margin-top: 20px;
 #header{
     width: 100%;
     height:330px;
+    padding-left:2%;
 }
 
 #logomenu{
@@ -74,7 +76,7 @@ nav ul{
 
 #ville i {
     width:1%;
-    background-color:rgb(175, 173, 173);
+    background-color:rgba(175, 173, 173, 0.1 );
     justify-content: center;
     display: flex;
     padding:5%;
@@ -87,6 +89,7 @@ nav ul{
     display: flex;
     padding: 5%;
     color:white;
+    font-weight: bold;
 }
 
 #ville form{
@@ -97,6 +100,8 @@ nav ul{
     width:100%;
     border:0px;
     height: 50px;
+    font-weight: bold;
+    font-size:1.3em;
 }
 
 input:focus {
@@ -126,13 +131,14 @@ input:focus {
 }
 
 .mesfiltres i{
-    background-color:rgba(173, 173, 247, 0.836);
+    background-color: rgb(222,235,255);
     width: 30px;
     height: 30px;
     border-radius: 50%;
     align-items: center;
     display: flex;
     justify-content: center;
+    color:#0065FC;
 }
 
 .mesfiltres a{
@@ -179,24 +185,57 @@ input:focus {
     height:80%;
 }
 
+#block-hebergement p{
+    font-weight: bold;
+    margin-left:3%;
+}
 
-  .box.box1{
+
+.box.box1{
     width: 28%;
-    height: 33%;
+    height: 38%;
     background-color: white;
     border-radius:15px;
     box-shadow: 2px 4px 10px rgb(175, 173, 173); 
     text-align: center;
 }
 
-  .box1 img{
-    width: 95%;
+.box1 img{
+    width: 96%;
     height: 60%;
     padding-left: 3px;
     border-radius: 15px 15px 0px 0px;
     padding: 5px 3px 0px 3px;
     object-fit: cover;
   }
+
+.box1 figcaption{
+      display:flex;
+      flex-direction:column;
+      line-height: 10%;
+      text-align: left;
+      margin-left: 15px;
+      height:30px;
+  }
+
+figcaption h3{
+      font-size: 1em;
+  }
+
+figcaption p{
+      font-size:0.7em;
+  }
+
+figcaption .rating{
+      font-size:0.6em;
+      color:#0065FC;
+  }
+
+.rating a {
+    color:;
+    text-decoration: none;
+    font-size: 1em;
+ }
 /*#endregion*/
 
 /*#region-populaire*/
@@ -217,14 +256,15 @@ input:focus {
     width:100%;
     height: 80%;
     justify-content: space-around;
-    margin: 30px 0px 0px 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
+    margin-top:4%;
 }
 
+
 .box.box2{
-    width: 92%;
+    width: 85%;
     height: 25%;
     background-color: white;
     border-radius: 10px;
@@ -232,8 +272,14 @@ input:focus {
     box-shadow: 2px 4px 10px rgb(175, 173, 173); 
 }
 
-.box2 img{
+.box2 a{
     width: 40%;
+    overflow: hidden;
+    padding-right:5%;
+}
+
+.box2 img{
+    width: 100%;
     height: 96%;
     border-style: solid;
     border-color: white;
@@ -241,6 +287,13 @@ input:focus {
     align-items: center;
     object-fit: cover;
 }
+
+.box2 p{
+    margin-bottom: 30%;
+}
+
+
+
 
 #alignementlogo{
     display:flex;
@@ -255,8 +308,12 @@ input:focus {
     background-color: white;
     width: 100%;
     height: 500px;
+    margin-top:4%;
 }
 
+#block-activite h2{
+    margin-left:1%;   
+}
 
 .disposition_activite{
     width:95%;
@@ -267,9 +324,6 @@ input:focus {
     grid-auto-rows: 220px;
 }
 
-.disposition_activite figure figcaption{
-    height: 40px;
-}
 
 .disposition_activite h3 {
     margin-block-start: 0.5em;
@@ -365,10 +419,12 @@ figure{
     display: flex;
     flex-direction: column;
     list-style-type:none; 
+    margin-right:14%;
 }
 
 .titre{
 font-weight: bold;
+margin-bottom: 4%;
 }
 /*#endregion*/
 
