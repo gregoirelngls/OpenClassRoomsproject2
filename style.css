@@ -728,6 +728,10 @@ figcaption .rating{
         font-size:1.5em;
     }
 
+    .disposition_populaire figcaption .rating{
+        padding-top:0px;
+    }
+
     #block-activite{
         height:auto;
         margin:0;
