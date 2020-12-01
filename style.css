@@ -729,7 +729,7 @@ figcaption .rating{
     }
 
     .disposition_populaire figcaption .rating{
-        padding-top:0px;
+        padding-top:0;
     }
 
     #block-activite{
