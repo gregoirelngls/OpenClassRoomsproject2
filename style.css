@@ -5,7 +5,7 @@
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-    font-family:Raleway; sans-serif; verdana;
+    font-family: 'Raleway', serif, verdana;
 }
 
 h1{
@@ -184,7 +184,6 @@ input:focus {
     align-items:center;
     border:1px rgb(175, 173, 173) solid;
     border-radius:50px;
-    flex-direction: space-around;
     white-space: nowrap;
     margin-right:10px;
 }
@@ -254,7 +253,7 @@ input:focus {
 
 .box1 img{
     width: calc(100% - 6px);
-    height: 60%;
+    height: 140px;
     padding-left: 3px;
     border-radius: 15px 15px 0px 0px;
     padding: 3px 3px 0px 3px;
@@ -266,26 +265,29 @@ input:focus {
     flex-direction:column;
     line-height: 10%;
     text-align: left;
-    margin-left: 12px;
     height:30px;
   }
 
-figcaption h3{
+.box1 figcaption h3{
     font-size: 0.9em;
     font-weight: bold;
+    margin-left:4%;
+
   }
 
-figcaption p{
+.box1 figcaption p{
     font-size:0.7em;
+    margin-left:4%;
   }
 
-figcaption .rating{
+.box1 figcaption .rating{
     font-size:0.6em;
     color:#0065FC;
+    margin-left:4%;
 }
 
 .rating a {
-    color:;
+    color:#0065FC;
     text-decoration: none;
     font-size: 1em;
  }
@@ -343,7 +345,7 @@ figcaption .rating{
 
 .box2 img{
     width: 45%;
-    height: 96%;
+    height: 134px;
     border-style: solid;
     border-color: white;
     border-radius: 10px 0px 0px 10px;
@@ -351,12 +353,39 @@ figcaption .rating{
     object-fit: cover;
 }
 
-.box2 p{
-    margin-bottom: 24%;
+.legend_populaires{
+    display:flex;
+    flex-direction:column;
+    width:60%;
 }
 
-.box2 figcaption{
-    margin-left:3%;
+.legend_populaires p{
+    font-size:0.7em;
+    margin-left:4%;
+  }
+
+.legend_populaires .rating{
+    font-size:0.6em;
+    color:#0065FC;
+    margin-left:4%;
+}
+
+.legend_populaires h3{
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-left:4%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.rating a {
+    color:#0065FC;
+    text-decoration: none;
+    font-size: 1em;
+ }
+
+.box2 p{
+    margin-bottom: 8%;
 }
 
 #alignementlogo{
@@ -386,20 +415,26 @@ figcaption .rating{
 
 
 .disposition_activite h3 {
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
     margin-left:10px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 0.9em;
 }
 
 .disposition_activite figure{
-    width: 90%;
+    width: 95%;
     height:auto;
     border-radius: 15px;
     box-shadow: 2px 4px 10px rgb(175, 173, 173); 
     object-fit: cover;
     display:flex;
     flex-direction:column;
-    margin-inline-start: 2%;
+    margin:2%;
+}
+
+.disposition_activite figure figcaption {
+    width: 100%;
+    height:100%; 
 }
 
 #un {
@@ -449,9 +484,12 @@ figcaption .rating{
     grid-row-end:3;
 }
 
-.img{
-    height:100%;
-    overflow: hidden;
+.disposition_activite a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .disposition_activite img{
@@ -459,8 +497,8 @@ figcaption .rating{
     height:100%;
     object-fit: cover;
     border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
 }
-
 /*#endregion*/   
 
 /*#region-footer*/
@@ -661,6 +699,10 @@ figcaption .rating{
         height:auto;
     }
 
+    .box2 img{
+        height:194px;
+    }
+
     #block-hebergement{
         margin:0;
         padding:0;
@@ -682,8 +724,16 @@ figcaption .rating{
     }
 
     #block-hebergement h3{
-    margin-block-start: 0.6em;
-    margin-block-end: 0.5em;  
+        margin-left: 4%;
+        margin-right: 0.5em; 
+    }
+
+    .disposition_hebergement p{
+        margin-left:3%;
+    }
+
+    .disposition_hebergement .rating{
+        margin-left:3%;
     }
 
     .gras{
@@ -692,10 +742,10 @@ figcaption .rating{
     }
 
     .box1 img {
-        width: 97%;
+        width: 99%;
         height: 60%;
         border-radius: 15px 15px 0px 0px;
-        padding: 5px 3px 0px 3px;
+        padding: 3px 3px 0px 3px;
         object-fit: cover;
     }
 
@@ -829,8 +879,9 @@ figcaption .rating{
         flex-direction:column-reverse;
     }
 
-    figcaption h3{
+    .box1 figcaption h3{
         font-size:1em;
+        margin-top:8%;
     }
 
     #block-populaire{
@@ -844,16 +895,8 @@ figcaption .rating{
         margin-top:0px;
     }
 
-    .disposition_populaire figure{
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-    }
-
     .disposition_populaire figcaption{
         font-size:0.8em;
-        padding:5px;
         margin:0;
     }
 
@@ -866,27 +909,37 @@ figcaption .rating{
         flex-direction:column;
         padding-right:2%;
     }
-     .disposition_populaire h3{
-        margin-block-start:0.1em;
-        margin-block-end:0.1em
-     }
-
-    .disposition_populaire p{
-         margin-block-end:0;
-     }
-
+   
     .box.box2 {
         width: 30%;
-        height: 250px;
+        height: 230px;
         background-color: white;
         border-radius: 10px;
         display: flex;
-        font-size: 1.4em;
+        font-size: 1.3em;
         box-shadow: 2px 4px 10px rgb(175, 173, 173);
+        margin:2%;
+    }
+
+    .legend_populaires{
+        width:100%;
+        padding-left:2%
+    }
+
+    .legend_populaires h3{
+        margin:1%;
+    }
+
+    .legend_populaires p{
+        margin:1%;
+    }
+
+    .legend_populaires .rating{
+        margin:1%;
     }
 
     .box2 img{
-        width:100%;
+        width:98%;
         height:140px;
         border-radius:10px;
     }
@@ -900,7 +953,6 @@ figcaption .rating{
     #block-hebergement{
         width:100%;
         height:70%;
-        margin-block-start: 3em;
         padding-bottom:20px;
     }
 
@@ -911,7 +963,7 @@ figcaption .rating{
    }
 
    .disposition_hebergement figcaption .rating{
-        padding-top:3%;
+        padding-top:1%;
     }
 
     #block-activite{
